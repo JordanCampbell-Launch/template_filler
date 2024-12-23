@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{first-name}} {{last-name}}</title>
+</head>
+<body>
+    <header id="contact_info">
+        <p>{{email}}</p>
+        <p>{{phone}}</p>
+    </header>
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            {{#education}}
+            <li>
+                <strong>{{degree}}</strong> - {{institution}} ({{year}})
+            </li>
+            {{/education}}
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            {{#skills}}
+            <li>{{.}}</li>
+            {{/skills}}
+        </ul>
+    </section>
+    <section id="employment">
+        <h2>Experience</h2>
+        <ul>
+            {{#experience}}
+            <li>
+                <strong>{{position}}</strong> at {{company}} ({{startYear}} - {{endYear}})
+                {{#descriptions}}
+                <li>{{.}}</li>
+                {{/descriptions}}
+            </li>
+            {{/experience}}
+        </ul>
+    </section>
+</body>
+</html>

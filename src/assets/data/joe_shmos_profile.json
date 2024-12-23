@@ -1,0 +1,33 @@
+{
+    "first-name": "John",
+    "last-name": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "123-456-7890",
+    "education": [
+        {
+            "degree": "Bachelor of Science in Computer Science",
+            "institution": "University of Example",
+            "year": "2020"
+        }
+    ],
+    "skills": [
+        "JavaScript",
+        "Node.js",
+        "HTML",
+        "CSS",
+        "React"
+    ],
+    "experience": [
+        {
+            "position": "Software Engineer",
+            "company": "Tech Solutions Inc.",
+            "startYear": "2021",
+            "endYear": "Present",
+            "descriptions": [
+                "Developed and maintained web applications using JavaScript and React.",
+                "Collaborated with cross-functional teams to define and implement new features.",
+                "Optimized application performance and improved user experience."
+            ]
+        }
+    ]
+}
